@@ -4,8 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      @import url("./styles/styles.css");
+    </style>
   </head>
   <body>
-    <h1>Expense tracker</h1>
+    <main>
+      <div class="container">
+        <header>
+          <h2>Expense Tracker</h2>
+        </header>
+        <div class="your-balance">
+          <div>
+            <h2>Your Balance</h2>
+            <h2>$300</h2>
+          </div>
+          <div class="cards">
+            <div>
+              <h3>Income</h3>
+              <p>$100000</p>
+            </div>
+            <div>
+              <h3>Expenses</h3>
+              <p>$500</p>
+            </div>
+          </div>
+        </div>
+        <form>
+          <h2>Add transaction</h2>
+          <div class="inputs">
+            <label>
+              <span>Description</span>
+              <input type="text" placeholder="Enter description" />
+            </label>
+            <label>
+              <span>Amout</span>
+              <input type="number" placeholder="Enter amount" />
+            </label>
+            <button type="submit">Add transaction</button>
+          </div>
+        </form>
+        <h2>Tranction history</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Amount</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2025-11-09</td>
+              <td>School fees</td>
+              <td>1200000</td>
+              <td><button>Delete</button></td>
+            </tr>
+            <tr>
+              <td>2025-11-09</td>
+              <td>School fees</td>
+              <td>1200000</td>
+              <td><button>Delete</button></td>
+            </tr>
+            <tr>
+              <td>2025-11-09</td>
+              <td>School fees</td>
+              <td>1200000</td>
+              <td><button>Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
   </body>
 </html>

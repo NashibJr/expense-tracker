@@ -1,0 +1,166 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: aliceblue;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.container {
+  width: 500px;
+  max-height: 600px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 5px 20px;
+  overflow-y: scroll;
+}
+
+header > h2,
+.your-balance h2:last-child {
+  font-size: 27px;
+  color: blueviolet;
+  text-align: center;
+}
+
+.your-balance {
+  display: flex;
+  flex-direction: column;
+}
+
+.your-balance h2:first-child {
+  opacity: 0.8;
+  text-align: center;
+  margin: -5px auto -15px auto;
+  font-size: 22px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+}
+
+.cards div {
+  height: 120px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards div:first-child {
+  background-color: rgb(224, 211, 193);
+}
+
+.cards div:last-child {
+  background-color: rgb(255, 203, 196);
+}
+
+.cards h3 {
+  font-size: 16px;
+  margin-bottom: -5px;
+  font-weight: lighter;
+}
+
+.cards p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form h2,
+.container > h2 {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.inputs label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.inputs label span {
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputs label input {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  outline: none;
+}
+
+.inputs button {
+  border-radius: 5px;
+  color: #fff;
+  background-color: blueviolet;
+  padding: 12px;
+  border: none;
+  outline: none;
+  width: 150px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.container > h2 {
+  color: blueviolet;
+  margin-top: 20px;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+table tr th,
+table tr td {
+  padding: 10px;
+  opacity: 0.8;
+  text-align: left;
+}
+
+table thead {
+  background-color: #eeeeee;
+  border-radius: 15px;
+}
+
+table thead tr th:first-child {
+  border-radius: 15px 0 0 0;
+}
+
+table thead tr th:last-child {
+  border-radius: 0 15px 0 0;
+}
+
+table tbody tr td button {
+  padding: 10px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+table tbody tr td {
+  border-bottom: 1px solid #d3d3d3;
+}
