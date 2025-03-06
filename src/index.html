@@ -22,7 +22,7 @@
           <div class="cards">
             <div>
               <h3>Income</h3>
-              <p>$100000</p>
+              <p id="income">$100000</p>
             </div>
             <div>
               <h3>Expenses</h3>
@@ -35,11 +35,11 @@
           <div class="inputs">
             <label>
               <span>Description</span>
-              <input type="text" placeholder="Enter description" />
+              <input type="text" placeholder="Enter description" required />
             </label>
             <label>
-              <span>Amout</span>
-              <input type="number" placeholder="Enter amount" />
+              <span>Amount</span>
+              <input type="number" placeholder="Enter amount" required />
             </label>
             <button type="submit">Add transaction</button>
           </div>
@@ -77,5 +77,6 @@
         </table>
       </div>
     </main>
+    <script src="./js/index.js"></script>
   </body>
 </html>
