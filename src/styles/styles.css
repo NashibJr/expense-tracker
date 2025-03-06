@@ -159,8 +159,13 @@ table tbody tr td button {
   border: none;
   outline: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 table tbody tr td {
   border-bottom: 1px solid #d3d3d3;
+}
+
+table tbody tr td button:hover {
+  opacity: 0.8;
 }
